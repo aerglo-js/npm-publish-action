@@ -134,7 +134,9 @@ async function publishPackage(dir, config, version) {
     "publish",
     "--non-interactive",
     "--new-version",
-    version
+    version,
+    "--access",
+    "public"
   );
 
   console.log("Version has been published successfully:", version);
